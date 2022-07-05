@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+ .body{
+    
+    background: url("./bg.jpg");
+    background-repeat: no-repeat;
+    /* border: 2px solid orange; */
+    /* padding: 325px 514px; */
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+ }
+ #board{
+     background:linear-gradient(rgb(138, 168, 138),yellow);
+     width: 90vmin;
+     height: 90vmin;
+     display: grid;
+     border: 2px solid rgb(255, 72, 0);
+     grid-template-rows: repeat(18,1fr);
+     grid-template-columns: repeat(18,1fr);
+ }
+ #Score{
+     position: absolute;
+     top:20px;
+     right:12px;
+     font-size: 39px;
+     font-family: 'Lobster', cursive;
+    
+ }
+ #hiscorebox{
+    position: absolute;
+    top:70px;
+    right:12px;
+    font-size: 39px;
+    font-family: 'Lobster', cursive;
+    
+}
+ .head{
+     background:linear-gradient(red,yellow);
+     border: 2px solid purple;
+     transform: scale(1.02);  /* scale the head by 2%*/
+     border-radius: 12px;
+ }
+ .snake_body{
+     background-color:  purple;
+     border: .30vmin solid white;
+     border-radius: 20px;
+ }
+ .food{
+     background-color:rgb(255, 210, 192) ;
+     border: .30vmin solid black;
+     border-radius: 15px;
+ }
